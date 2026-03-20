@@ -1,6 +1,9 @@
 public class BankB extends Bank{
     @Override
-    int getBalance() {
-        return 150;
+    String getBalance() {
+        return "balance in bank B: "+balance;
+    }
+    BankB(double balance){
+        super(balance);
     }
 }
