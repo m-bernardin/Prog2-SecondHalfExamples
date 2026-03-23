@@ -17,10 +17,12 @@ public class ShapeDriver {
                     System.out.print("Please enter the width\n> ");
                     Rectangle rectangle=new Rectangle(input.nextDouble(), height);
                     System.out.println("Rectangle info:\nheight: "+rectangle.getHeight()+"\nwidth: "+rectangle.getWidth()+"\nperimeter: "+rectangle.getPerimeter()+"\narea: "+rectangle.getArea());
+                    break;
                 case 3:
                     System.out.println("Goodbye :)");
                     running=false;
                     input.close();
+                    break;
                 default:
                     System.out.println("Please enter a valid option...");
                     break;

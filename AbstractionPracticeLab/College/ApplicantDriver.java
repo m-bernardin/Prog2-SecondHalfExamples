@@ -31,6 +31,7 @@ public class ApplicantDriver {
                     System.out.println("Goodbye :)");
                     running=false;
                     input.close();
+                    break;
                 default:
                     System.out.println("Please enter a valid option");
                     break;

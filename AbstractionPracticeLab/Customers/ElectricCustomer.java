@@ -17,4 +17,8 @@ public class ElectricCustomer extends UtilityCustomer{
     protected double calculateBill() {
         return DELIVERY_FEE+DOLLARS_PER_KWH*kwhUsed;
     }
+    @Override
+    public String toString() {
+        return super.toString()+", used "+kwhUsed+" kWh this season, amnt due: "+calculateBill();
+    }
 }
