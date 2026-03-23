@@ -14,7 +14,7 @@ public class ApplicantDriver {
                     System.out.print("Please enter the college the student is applying to\n> ");
                     String applyingCollege=input.nextLine();
                     System.out.print("Please enter the student's college of origin\n> ");
-                    System.out.println(new Graduate(name, applyingCollege, applyingCollege));
+                    System.out.println(new Graduate(name, applyingCollege, input.nextLine()));
                     break;
                 case 2:
                     input.nextLine();
