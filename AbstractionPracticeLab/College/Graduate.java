@@ -17,6 +17,6 @@ public class Graduate extends Applicant{
     }
     @Override
     public String toString() {
-        return super.toString()+" from "+collegeOfOrigin;
+        return super.toString()+" from "+collegeOfOrigin+" ("+applicationLocation()+")";
     }
 }
