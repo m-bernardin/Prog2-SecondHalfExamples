@@ -9,15 +9,12 @@ public class Student {
     private static String ID;
     private static int grade;
     public Student(String name, String iD, int grade) {
-        this.name = name;
-        ID = iD;
-        this.grade = grade;
+        Student.name = name;
+        Student.ID = iD;
+        Student.grade = grade;
     }
     public String getName() {
         return name;
-    }
-    public void setName(String name) {
-        this.name = name;
     }
     public String getID() {
         return ID;
@@ -27,9 +24,6 @@ public class Student {
     }
     public int getGrade() {
         return grade;
-    }
-    public void setGrade(int grade) {
-        this.grade = grade;
     }
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
@@ -66,6 +60,7 @@ public class Student {
                 case 5:
                     running=false;
                     saveStudent();
+                    input.close();
                     System.out.println("Goodbye :)");
                     break;
                 default:
