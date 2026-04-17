@@ -1,3 +1,4 @@
+package Interfaces.Personnel;
 public class Family {
     protected int nbFamilyMembers;
     private boolean lowIncome;

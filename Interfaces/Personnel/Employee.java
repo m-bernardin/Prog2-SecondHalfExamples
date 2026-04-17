@@ -1,3 +1,4 @@
+package Interfaces.Personnel;
 public class Employee extends Family implements EducationalInfo, EmploymentInfo, PersonalInfo{
     private String name;
     private int age;

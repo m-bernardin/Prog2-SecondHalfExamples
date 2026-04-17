@@ -1,3 +1,4 @@
+package Shapes;
 public class Rectangle extends Shape{
     private double width;
     public double getWidth() {
