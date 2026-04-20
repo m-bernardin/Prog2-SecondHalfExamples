@@ -1,25 +1,25 @@
 package InterfaceAndFileHandlingPractice;
-public class CompanyA implements Organize,Calculate{
+public class CompanyB implements Organize,Calculate{
     @Override
     public int calculate(int[] nums) {
-        int maxPos=0;
+        int minPos=0;
         for(int i=0;i<nums.length;++i){
-            if(nums[i]>nums[maxPos])maxPos=i;
+            if(nums[i]<nums[minPos])minPos=i;
         }
-        return maxPos;
+        return minPos;
     }
     @Override
-    public String[] sort(String[] names) {
-        for(int i=0;i<names.length;++i){
-            for(int j=0;j<names.length-1;++j){
-                if(compare(names[i],names[j])==0){
-                    String temp=names[j]; 
-                    names[j]=names[i];
-                    names[i]=temp;
+    public String[] sort(String[] salaries) {
+        for(int i=0;i<salaries.length;++i){
+            for(int j=0;j<salaries.length-1;++j){
+                if(compare(salaries[i],salaries[j])==1){
+                    String temp=salaries[j]; 
+                    salaries[j]=salaries[i];
+                    salaries[i]=temp;
                 }
             }
         }
-        return names;
+        return salaries;
     }
     private String[] names;
     private int[] ages;

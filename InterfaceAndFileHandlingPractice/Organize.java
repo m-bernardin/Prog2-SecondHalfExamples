@@ -1,4 +1,4 @@
 package InterfaceAndFileHandlingPractice;
-public class Organize {
-    
+public interface Organize {
+    String[] sort(String[] string);
 }
